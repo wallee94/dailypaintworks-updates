@@ -26,6 +26,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
       - name: Sync html
         run: python main.py
+        env:
+          ARTIST_IDS: ${{ vars.ARTIST_IDS }}
       - name: Commit and push if it changed
         run: |
           git add -A
