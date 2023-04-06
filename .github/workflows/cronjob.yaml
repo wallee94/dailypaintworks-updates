@@ -5,7 +5,7 @@ on:
     - cron: '30 * * * *'
 
 jobs:
-  scheduled:
+  sync:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -26,6 +26,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
       - name: Sync html
         run: python main.py
+        env:
+          ARTIST_IDS: ${{ secrets.ARTIST_IDS }}
       - name: Commit and push if it changed
         run: |
           git add -A

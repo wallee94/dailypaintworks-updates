@@ -57,6 +57,9 @@ def sync():
 
 
 def update_template(posts):
+    if not posts:
+        return
+
     template = env.get_template("index.html")
     with open(os.path.join("docs", "index.html"), "w") as f:
         f.write(template.render(posts=posts))
