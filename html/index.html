@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DailyPaintworks updates</title>
+    <title>🎨 DailyPaintworks updates</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
         }
         .posts {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(1, minmax(0, 1fr));
             max-width: 1200px;
             margin: 20px auto;
         }
@@ -59,7 +59,7 @@
         }
         .post .image img {
             width: 100%;
-            height: auto;
+            max-height: 300px;
         }
         .post .image .sold {
             position: absolute;
@@ -68,21 +68,22 @@
             font-size: 30px;
         }
 
-        @media(max-width: 400px) {
-            .posts {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-        }
-        @media(max-width: 800px) {
+        @media(min-width: 768px) {
             .posts {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        @media(min-width: 1024px) {
+            .posts {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
             }
         }
     </style>
 </head>
 <body>
 <header>
-    <h1>DailyPaintworks updates</h1>
+    <h1 class="page-title">DailyPaintworks updates</h1>
+    <p class="description"></p>
 </header>
 <div class="posts-container">
     <div class="posts">
