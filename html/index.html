@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyPaintworks updates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Merriweather,serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin: 2px 0;
+            font-weight: normal;
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+            cursor: pointer;
+        }
+        header {
+            margin: 40px auto 30px;
+            max-width: 1100px;
+        }
+        header .page-title {
+            font-size: 1.8em;
+        }
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .post {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 20px 10px;
+            justify-content: space-between;
+        }
+        .post .image {
+            display: block;
+            overflow-y: hidden;
+            min-height: 300px;
+            margin: 0 auto 10px;
+        }
+        .post .image img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media(max-width: 400px) {
+            .posts {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+        @media(max-width: 800px) {
+            .posts {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>DailyPaintworks updates</h1>
+</header>
+<div class="posts-container">
+    <div class="posts">
+        {% for p in posts %}
+            <div class="post">
+                <div class="image">
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/{{ p.ImageName }}.jpg"
+                         alt="{{ p.Title }}" class="painting-img">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/Artists/{{ p.GalleryName }}">
+                        <h2 class="title">{{ p.Title }}</h2>
+                    </a>
+                    <h3 class="artist-name">{{ p.ArtistName }}</h3>
+                    <p class="date">{{ p.DateString }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>
