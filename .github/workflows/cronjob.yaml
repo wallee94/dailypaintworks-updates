@@ -1,0 +1,34 @@
+name: dailypaintworks-sync
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 * * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ 3.8 ]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Configure Git for commits
+        run: |
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+      - name: Sync html
+        run: python main.py
+      - name: Commit and push if it changed
+        run: |
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "update page with new paintings: ${timestamp}" || exit 0
+          git push
