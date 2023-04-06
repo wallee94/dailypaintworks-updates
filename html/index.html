@@ -32,45 +32,76 @@
         }
         header .page-title {
             font-size: 1.8em;
+            margin: 0 25px;
         }
         .title {
             font-size: 1.5em;
             font-weight: bold;
         }
+        .tag {
+            margin: 0 25px;
+        }
+        .posts-container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .posts-container .only-available-label {
+            margin-left: 20px;
+        }
         .posts {
             display: grid;
             grid-template-columns: repeat(1, minmax(0, 1fr));
-            max-width: 1200px;
-            margin: 20px auto;
         }
         .post {
             display: flex;
             flex-direction: column;
             position: relative;
             margin: 20px 10px;
-            justify-content: space-between;
         }
         .post .image {
             display: block;
-            overflow-y: hidden;
-            min-height: 300px;
             margin: 0 auto 10px;
             position: relative;
+            border-radius: 0.3rem;
+            overflow: hidden;
+            --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
         }
         .post .image img {
             width: 100%;
             max-height: 300px;
+            display: block;
         }
-        .post .image .sold {
+        .post .image span.sold {
             position: absolute;
             right: 10px;
             top: 10px;
-            font-size: 30px;
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            background-color: red;
+            --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
+        }
+        .post .post-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .only-available-checkbox {
+            height: 1em;
+        }
+
+        .only-available-checkbox:checked + .posts .post.sold {
+            display: none;
         }
 
         @media(min-width: 768px) {
             .posts {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .post {
+                justify-content: space-between;
             }
         }
         @media(min-width: 1024px) {
@@ -86,15 +117,18 @@
     <p class="description"></p>
 </header>
 <div class="posts-container">
+    <label for="only-available" class="only-available-label">Show only available</label>
+    <input type="checkbox" id="only-available"
+           name="only-available" class="only-available-checkbox">
     <div class="posts">
         {% for p in posts %}
-            <div class="post">
+            <div class="post{% if p.Sold %} sold{% endif %}">
                 <div class="image">
                     {% if p.Sold %}
-                    <span class="sold" title="Sold">🔴️</span>
+                    <span class="sold" title="Sold"></span>
                     {% endif %}
                     <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/{{ p.ImageName }}.jpg"
-                         alt="{{ p.Title }}" class="painting-img">
+                         alt="{{ p.Title }}" class="painting-img" loading="lazy">
                 </div>
                 <div class="tag">
                     <a target="_blank"
@@ -102,7 +136,10 @@
                         <h2 class="title">{{ p.Title }}</h2>
                     </a>
                     <h3 class="artist-name">{{ p.ArtistName }}</h3>
-                    <p class="date">{{ p.DateString }}</p>
+                    <div class="post-footer">
+                        <p class="date">{{ p.DateString }}</p>
+                        <p class="price">${{ "%.2f"|format(p.Price) }}</p>
+                    </div>
                 </div>
             </div>
         {% endfor %}
