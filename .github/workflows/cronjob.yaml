@@ -2,7 +2,7 @@ name: dailypaintworks-sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 * * * *'
+    - cron: '0,30 * * * *'
 
 jobs:
   sync:
