@@ -82,11 +82,17 @@ def update_template(all_posts, page_size=120):
         return
 
     options = [
-        Options("docs", all_posts, "/", "Show only available", "/available"),
+        Options(
+            "docs",
+            all_posts,
+            "/dailypaintworks-updates/",
+            "Show only available",
+            "/available",
+        ),
         Options(
             os.path.join("docs", "available"),
             [p for p in all_posts if not p["Sold"]],
-            "/available",
+            "/dailypaintworks-updates/available",
             "Show all",
             "/",
         ),
