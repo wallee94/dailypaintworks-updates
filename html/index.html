@@ -96,6 +96,24 @@
             display: none;
         }
 
+        .pages {
+            margin: 20px;
+            font-size: 1.2em;
+        }
+
+        .page {
+            margin: 0 10px;
+        }
+
+        .page.current {
+            color: black;
+            font-weight: 700;
+        }
+
+        .text-gray-800 {
+            color: rgb(31 41 55);
+        }
+
         @media(min-width: 768px) {
             .posts {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -117,9 +135,9 @@
     <p class="description"></p>
 </header>
 <div class="posts-container">
-    <label for="only-available" class="only-available-label">Show only available</label>
-    <input type="checkbox" id="only-available"
-           name="only-available" class="only-available-checkbox">
+    <p class="only-available-label">
+        <a href="{{ switch_path }}">{{ switch_message }}</a>
+    </p>
     <div class="posts">
         {% for p in posts %}
             <div class="post{% if p.Sold %} sold{% endif %}">
@@ -135,13 +153,20 @@
                        href="https://www.dailypaintworks.com/viewart/{{ p.Id }}">
                         <h2 class="title">{{ p.Title }}</h2>
                     </a>
-                    <h3 class="artist-name">{{ p.ArtistName }}</h3>
-                    <div class="post-footer">
+                    <h3 class="artist-name text-gray-800">{{ p.ArtistName }}</h3>
+                    <div class="post-footer text-gray-800">
                         <p class="date">{{ p.DateString }}</p>
                         <p class="price">${{ "%.2f"|format(p.Price) }}</p>
                     </div>
                 </div>
             </div>
+        {% endfor %}
+    </div>
+    <div class="text-gray-800 pages">
+        <span>Pages</span>
+        {% for page in pages %}
+        <a class="page page-btn{% if loop.index == page_current %} current{% endif %}"
+           href="{% if loop.index != 1 %}{{ page }}{% else %}{{ root_path }}{% endif %}">{{ loop.index }}</a>
         {% endfor %}
     </div>
 </div>

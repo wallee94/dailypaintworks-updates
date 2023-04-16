@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 DailyPaintworks updates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-size: 16px;
+            font-family: Merriweather,serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin: 2px 0;
+            font-weight: normal;
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+            cursor: pointer;
+        }
+        header {
+            margin: 40px auto 30px;
+            max-width: 1100px;
+        }
+        header .page-title {
+            font-size: 1.8em;
+            margin: 0 25px;
+        }
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .tag {
+            margin: 0 25px;
+        }
+        .posts-container {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .posts-container .only-available-label {
+            margin-left: 20px;
+        }
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+        .post {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 20px 10px;
+        }
+        .post .image {
+            display: block;
+            margin: 0 auto 10px;
+            position: relative;
+            border-radius: 0.3rem;
+            overflow: hidden;
+            --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
+        }
+        .post .image img {
+            width: 100%;
+            max-height: 300px;
+            display: block;
+        }
+        .post .image span.sold {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            background-color: red;
+            --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)
+        }
+        .post .post-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .only-available-checkbox {
+            height: 1em;
+        }
+
+        .only-available-checkbox:checked + .posts .post.sold {
+            display: none;
+        }
+
+        .pages {
+            margin: 20px;
+            font-size: 1.2em;
+        }
+
+        .page {
+            margin: 0 10px;
+        }
+
+        .page.current {
+            color: black;
+            font-weight: 700;
+        }
+
+        .text-gray-800 {
+            color: rgb(31 41 55);
+        }
+
+        @media(min-width: 768px) {
+            .posts {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .post {
+                justify-content: space-between;
+            }
+        }
+        @media(min-width: 1024px) {
+            .posts {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="page-title">DailyPaintworks updates</h1>
+    <p class="description"></p>
+</header>
+<div class="posts-container">
+    <p class="only-available-label">
+        <a href="/">Show all</a>
+    </p>
+    <div class="posts">
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/8de1efda-c183-458c-9eb2-698aa9a868ff.jpg"
+                         alt="Beach House Way" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/8de1efda-c183-458c-9eb2-698aa9a868ff">
+                        <h2 class="title">Beach House Way</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Aug 13, 2022</p>
+                        <p class="price">$125.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/d7f9fd2d-ce92-4c13-a583-8e80a2f42fe4.jpg"
+                         alt="Race to Alaska" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/d7f9fd2d-ce92-4c13-a583-8e80a2f42fe4">
+                        <h2 class="title">Race to Alaska</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Shari Buelt</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Aug 12, 2022</p>
+                        <p class="price">$60.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/71cc644e-5b18-4cde-b106-2596d07a913b.jpg"
+                         alt="Evening Cool Down" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/71cc644e-5b18-4cde-b106-2596d07a913b">
+                        <h2 class="title">Evening Cool Down</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Shari Buelt</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Aug 11, 2022</p>
+                        <p class="price">$50.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/826f201e-4569-41c6-8f35-17dbcdec0790.jpg"
+                         alt="&#34;RETIRED&#34; RURAL LANDSCAPE" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/826f201e-4569-41c6-8f35-17dbcdec0790">
+                        <h2 class="title">&#34;RETIRED&#34; RURAL LANDSCAPE</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Tom Brown</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Aug 9, 2022</p>
+                        <p class="price">$100.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/0ca72b99-42d6-40ef-af36-f0719bd639f6.jpg"
+                         alt="Birdie" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/0ca72b99-42d6-40ef-af36-f0719bd639f6">
+                        <h2 class="title">Birdie</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Shari Buelt</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Aug 9, 2022</p>
+                        <p class="price">$55.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/a0f55396-147f-40bd-b70a-b7c4918cfba9.jpg"
+                         alt="Farmers Market Fresh" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/a0f55396-147f-40bd-b70a-b7c4918cfba9">
+                        <h2 class="title">Farmers Market Fresh</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jul 12, 2022</p>
+                        <p class="price">$150.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/bfd1356a-5192-42fc-88d2-a1b0fbfb9bdc.jpg"
+                         alt="CYBER WEEK SALE, VINEYARD 1" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/bfd1356a-5192-42fc-88d2-a1b0fbfb9bdc">
+                        <h2 class="title">CYBER WEEK SALE, VINEYARD 1</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Tom Brown</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jul 10, 2022</p>
+                        <p class="price">$150.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/53245a41-2679-4b0e-bd5d-2ccb849d63af.jpg"
+                         alt="CYBER MONDAY SALE, CLARINET" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/53245a41-2679-4b0e-bd5d-2ccb849d63af">
+                        <h2 class="title">CYBER MONDAY SALE, CLARINET</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Tom Brown</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jul 4, 2022</p>
+                        <p class="price">$100.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/14887280-5ff1-4ec0-bbc4-ac0acc4010ad.jpg"
+                         alt="CYBER WEEK SALE, VINEYARD 2" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/14887280-5ff1-4ec0-bbc4-ac0acc4010ad">
+                        <h2 class="title">CYBER WEEK SALE, VINEYARD 2</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Tom Brown</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jul 3, 2022</p>
+                        <p class="price">$150.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/d3c7dc41-c9de-45dc-8623-00c4bbdb53ff.jpg"
+                         alt="CLOUDSCAPE" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/d3c7dc41-c9de-45dc-8623-00c4bbdb53ff">
+                        <h2 class="title">CLOUDSCAPE</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Tom Brown</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jul 2, 2022</p>
+                        <p class="price">$500.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/bb55f0ef-8c72-4569-a7ff-ee8ff586c7c0.jpg"
+                         alt="I’ve Got You In My Sight" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/bb55f0ef-8c72-4569-a7ff-ee8ff586c7c0">
+                        <h2 class="title">I’ve Got You In My Sight</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Shari Buelt</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jun 21, 2022</p>
+                        <p class="price">$50.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/4152661b-8409-480a-9c5a-d5dc51683628.jpg"
+                         alt="Kinvara Harbor, Low Tide" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/4152661b-8409-480a-9c5a-d5dc51683628">
+                        <h2 class="title">Kinvara Harbor, Low Tide</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jun 15, 2022</p>
+                        <p class="price">$145.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/ded86966-915d-473c-8ed0-f0f423d644d4.jpg"
+                         alt="Cutie Pie" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/ded86966-915d-473c-8ed0-f0f423d644d4">
+                        <h2 class="title">Cutie Pie</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Shari Buelt</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">May 17, 2022</p>
+                        <p class="price">$50.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/8ffaa7a1-9daf-4acd-af97-39d91c0b0404.jpg"
+                         alt="CYBER WEEK SALE, VINEYARD 4" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/8ffaa7a1-9daf-4acd-af97-39d91c0b0404">
+                        <h2 class="title">CYBER WEEK SALE, VINEYARD 4</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Tom Brown</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">May 14, 2022</p>
+                        <p class="price">$150.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/a40abf38-1e41-4dba-b0bf-a794e764cc67.jpg"
+                         alt="Scottsdale Palms" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/a40abf38-1e41-4dba-b0bf-a794e764cc67">
+                        <h2 class="title">Scottsdale Palms</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 27, 2022</p>
+                        <p class="price">$85.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/3039b9e8-adac-4539-85ae-d98776d45948.jpg"
+                         alt="Cactus Bloom" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/3039b9e8-adac-4539-85ae-d98776d45948">
+                        <h2 class="title">Cactus Bloom</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 25, 2022</p>
+                        <p class="price">$330.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/5fe61695-e223-41d7-ae65-4a83ccb4bdcf.jpg"
+                         alt="RAWR" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/5fe61695-e223-41d7-ae65-4a83ccb4bdcf">
+                        <h2 class="title">RAWR</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 21, 2022</p>
+                        <p class="price">$130.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/9bd5a33e-04b5-4291-850e-227d8e8e5a0b.jpg"
+                         alt="Evening Slendor" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/9bd5a33e-04b5-4291-850e-227d8e8e5a0b">
+                        <h2 class="title">Evening Slendor</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 20, 2022</p>
+                        <p class="price">$140.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/c40f3002-914f-44dd-9d40-93deb0fcfc9f.jpg"
+                         alt="Philly Skyline from Fairmount Park" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/c40f3002-914f-44dd-9d40-93deb0fcfc9f">
+                        <h2 class="title">Philly Skyline from Fairmount Park</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 17, 2022</p>
+                        <p class="price">$85.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/9edbb7dc-3a54-40b4-b096-fc0c35454c86.jpg"
+                         alt="Philly Sunset Plein Air" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/9edbb7dc-3a54-40b4-b096-fc0c35454c86">
+                        <h2 class="title">Philly Sunset Plein Air</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 13, 2022</p>
+                        <p class="price">$85.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/21b35441-3530-407e-b9b9-d8f8cac420be.jpg"
+                         alt="River Street, Savannah" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/21b35441-3530-407e-b9b9-d8f8cac420be">
+                        <h2 class="title">River Street, Savannah</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 24, 2022</p>
+                        <p class="price">$85.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/5a60c77b-8e6c-497c-8a52-4616b00eb6b9.jpg"
+                         alt="Aspen Glory" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/5a60c77b-8e6c-497c-8a52-4616b00eb6b9">
+                        <h2 class="title">Aspen Glory</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 19, 2022</p>
+                        <p class="price">$150.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/187df71e-2e70-453b-baf1-8f455cf9806d.jpg"
+                         alt="Pigeon Perch" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/187df71e-2e70-453b-baf1-8f455cf9806d">
+                        <h2 class="title">Pigeon Perch</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 9, 2022</p>
+                        <p class="price">$130.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/68a0994f-b669-4d46-8f0f-36fe240f3adc.jpg"
+                         alt="You Are My Sunshine " class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/68a0994f-b669-4d46-8f0f-36fe240f3adc">
+                        <h2 class="title">You Are My Sunshine </h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 8, 2022</p>
+                        <p class="price">$320.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/86f0756e-879c-4081-9277-a7865a96b01d.jpg"
+                         alt="Ben Franklin Bridge Late Afternoon" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/86f0756e-879c-4081-9277-a7865a96b01d">
+                        <h2 class="title">Ben Franklin Bridge Late Afternoon</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jan 20, 2022</p>
+                        <p class="price">$85.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/0cb8f053-af14-493b-94d1-60416bd27236.jpg"
+                         alt="Brown Trout Splashes" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/0cb8f053-af14-493b-94d1-60416bd27236">
+                        <h2 class="title">Brown Trout Splashes</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Dec 22, 2021</p>
+                        <p class="price">$395.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/9c239640-ed32-4509-b649-92c48f759dd0.jpg"
+                         alt="Bluebird in the Blossoms (prints available)" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/9c239640-ed32-4509-b649-92c48f759dd0">
+                        <h2 class="title">Bluebird in the Blossoms (prints available)</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Nov 3, 2021</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/3e29e18f-0767-4f82-8402-6526fc174cff.jpg"
+                         alt="Tomato Gathering" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/3e29e18f-0767-4f82-8402-6526fc174cff">
+                        <h2 class="title">Tomato Gathering</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Oct 6, 2021</p>
+                        <p class="price">$180.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/2cc6bb8b-9548-4e77-b59d-c5ad08f0becf.jpg"
+                         alt="“Freedom in the foothills”" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/2cc6bb8b-9548-4e77-b59d-c5ad08f0becf">
+                        <h2 class="title">“Freedom in the foothills”</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Sep 6, 2021</p>
+                        <p class="price">$7750.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/af2f6a45-8ac2-4c38-82bd-d3688459b0ac.jpg"
+                         alt="Fish School" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/af2f6a45-8ac2-4c38-82bd-d3688459b0ac">
+                        <h2 class="title">Fish School</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Aug 28, 2021</p>
+                        <p class="price">$125.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/5ad93676-28bf-4065-ab64-386862709afd.jpg"
+                         alt="Crowd Pleaser " class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/5ad93676-28bf-4065-ab64-386862709afd">
+                        <h2 class="title">Crowd Pleaser </h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jul 8, 2021</p>
+                        <p class="price">$130.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/b66c9821-7efb-4cb3-b12b-917f1491cc96.jpg"
+                         alt="Rescue 1, Savannah Fire Dept" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/b66c9821-7efb-4cb3-b12b-917f1491cc96">
+                        <h2 class="title">Rescue 1, Savannah Fire Dept</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jul 3, 2021</p>
+                        <p class="price">$-1.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/cf52f267-410a-461f-91a8-0c1fc2678611.jpg"
+                         alt="Broad Creek, HHI" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/cf52f267-410a-461f-91a8-0c1fc2678611">
+                        <h2 class="title">Broad Creek, HHI</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jun 20, 2021</p>
+                        <p class="price">$-1.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/6e4807c2-e3c5-477a-a2ef-d1728c43ea35.jpg"
+                         alt="Ranunculus Rainbow" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/6e4807c2-e3c5-477a-a2ef-d1728c43ea35">
+                        <h2 class="title">Ranunculus Rainbow</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jun 8, 2021</p>
+                        <p class="price">$180.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/c9547ad2-638f-4429-aef4-7d9bafc438be.jpg"
+                         alt="Peony Love" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/c9547ad2-638f-4429-aef4-7d9bafc438be">
+                        <h2 class="title">Peony Love</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">May 31, 2021</p>
+                        <p class="price">$250.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/753d4145-7d2d-4370-880d-cdc41e013868.jpg"
+                         alt="Carolina Coast" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/753d4145-7d2d-4370-880d-cdc41e013868">
+                        <h2 class="title">Carolina Coast</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 9, 2021</p>
+                        <p class="price">$-1.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/ca52899d-5952-4300-a381-46d1f73a0eff.jpg"
+                         alt="Tulip Time" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/ca52899d-5952-4300-a381-46d1f73a0eff">
+                        <h2 class="title">Tulip Time</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 26, 2021</p>
+                        <p class="price">$180.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/84a17028-4178-4b45-a7f3-74e60865588b.jpg"
+                         alt="Blue Jay" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/84a17028-4178-4b45-a7f3-74e60865588b">
+                        <h2 class="title">Blue Jay</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Feb 26, 2021</p>
+                        <p class="price">$395.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/bfa4a7f9-d5ca-454c-93a2-3738f059f0ee.jpg"
+                         alt="Free Range" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/bfa4a7f9-d5ca-454c-93a2-3738f059f0ee">
+                        <h2 class="title">Free Range</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Feb 21, 2021</p>
+                        <p class="price">$120.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/59fbf636-0cf6-48f0-acb9-f2112c921faf.jpg"
+                         alt="Lilies and LaCroix" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/59fbf636-0cf6-48f0-acb9-f2112c921faf">
+                        <h2 class="title">Lilies and LaCroix</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Feb 19, 2021</p>
+                        <p class="price">$300.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/895f9c11-7ab8-4e05-a453-34bd1beae39a.jpg"
+                         alt="Corner of Gaston and Bull st, Savannah GA" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/895f9c11-7ab8-4e05-a453-34bd1beae39a">
+                        <h2 class="title">Corner of Gaston and Bull st, Savannah GA</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Danny Folkman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Feb 18, 2021</p>
+                        <p class="price">$115.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/75408b3b-ec2a-4bb7-93e4-2c93fcb6a679.jpg"
+                         alt="Flower Frenzy" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/75408b3b-ec2a-4bb7-93e4-2c93fcb6a679">
+                        <h2 class="title">Flower Frenzy</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Vicki McGrath</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Feb 13, 2021</p>
+                        <p class="price">$220.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/0714956c-f396-47f9-a52d-b5ef7cdea1d0.jpg"
+                         alt="Pasture Bug" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/0714956c-f396-47f9-a52d-b5ef7cdea1d0">
+                        <h2 class="title">Pasture Bug</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jan 29, 2021</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/509cdf91-7f21-4e1a-a6c6-9d519aa6d587.jpg"
+                         alt="Hummingbird at Colombine" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/509cdf91-7f21-4e1a-a6c6-9d519aa6d587">
+                        <h2 class="title">Hummingbird at Colombine</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jan 27, 2021</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/2bcbb189-a068-431f-b192-365beeb04f87.jpg"
+                         alt="Sun Valley Summer Color" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/2bcbb189-a068-431f-b192-365beeb04f87">
+                        <h2 class="title">Sun Valley Summer Color</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jun 24, 2020</p>
+                        <p class="price">$3800.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/18c32d27-1701-49f9-a421-49e9a913cbe3.jpg"
+                         alt="Sunset Drift" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/18c32d27-1701-49f9-a421-49e9a913cbe3">
+                        <h2 class="title">Sunset Drift</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jun 1, 2020</p>
+                        <p class="price">$1600.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/fbf2344c-996f-4e5f-b7e1-c607e32899f2.jpg"
+                         alt="Poppy Garden" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/fbf2344c-996f-4e5f-b7e1-c607e32899f2">
+                        <h2 class="title">Poppy Garden</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Sep 2, 2019</p>
+                        <p class="price">$2600.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/733ceba3-c0cc-4c36-bae3-f718021ad758.jpg"
+                         alt="Stargazer Glow" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/733ceba3-c0cc-4c36-bae3-f718021ad758">
+                        <h2 class="title">Stargazer Glow</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 18, 2019</p>
+                        <p class="price">$3800.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/4bcacb02-e03b-404f-a374-62f57721a2e6.jpg"
+                         alt="Peter Iredale&#39;s Sunset" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/4bcacb02-e03b-404f-a374-62f57721a2e6">
+                        <h2 class="title">Peter Iredale&#39;s Sunset</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Nora Bergman</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 7, 2019</p>
+                        <p class="price">$-1.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/dfcc1059-bebc-427e-a630-e99ff40b8754.jpg"
+                         alt="Fresh Hay" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/dfcc1059-bebc-427e-a630-e99ff40b8754">
+                        <h2 class="title">Fresh Hay</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Dec 22, 2017</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/5831c21e-a6a6-46dd-9ad7-37a311c66f4a.jpg"
+                         alt="&#34; waiting for a cracker&#34;" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/5831c21e-a6a6-46dd-9ad7-37a311c66f4a">
+                        <h2 class="title">&#34; waiting for a cracker&#34;</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Dec 6, 2017</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/b8dd506a-8a28-40c6-8836-407d7bc0740c.jpg"
+                         alt="Sunset Surf" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/b8dd506a-8a28-40c6-8836-407d7bc0740c">
+                        <h2 class="title">Sunset Surf</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Aug 9, 2017</p>
+                        <p class="price">$4800.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/ae8f809e-2461-4710-8dee-b1f364612afa.jpg"
+                         alt="Valley Winter Sunshine" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/ae8f809e-2461-4710-8dee-b1f364612afa">
+                        <h2 class="title">Valley Winter Sunshine</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 15, 2017</p>
+                        <p class="price">$1950.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/b17c0501-9e8d-4860-a373-636c8bbd0958.jpg"
+                         alt="Cape Disappointment light" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/b17c0501-9e8d-4860-a373-636c8bbd0958">
+                        <h2 class="title">Cape Disappointment light</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Sep 1, 2016</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/2c8cd031-4600-4afb-bb82-ae5349785ee2.jpg"
+                         alt="Oregon Coast Glow" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/2c8cd031-4600-4afb-bb82-ae5349785ee2">
+                        <h2 class="title">Oregon Coast Glow</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 11, 2016</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/c9591efc-9c27-4426-acc7-c5666bdcbba5.jpg"
+                         alt="Heceta Head View" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/c9591efc-9c27-4426-acc7-c5666bdcbba5">
+                        <h2 class="title">Heceta Head View</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 11, 2016</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/cc526d50-7787-4adf-93f5-71fb71a476bd.jpg"
+                         alt="&#34;The Patriot&#34;" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/cc526d50-7787-4adf-93f5-71fb71a476bd">
+                        <h2 class="title">&#34;The Patriot&#34;</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Aug 24, 2015</p>
+                        <p class="price">$4800.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/07c50bb3-9725-4909-be34-8debf49df9d4.jpg"
+                         alt="The Brookie Release" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/07c50bb3-9725-4909-be34-8debf49df9d4">
+                        <h2 class="title">The Brookie Release</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 25, 2015</p>
+                        <p class="price">$695.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/95b7f5d9-66b0-453b-ac96-aba268567123.jpg"
+                         alt="&#34;Z&#34; is for Zebra Finch" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/95b7f5d9-66b0-453b-ac96-aba268567123">
+                        <h2 class="title">&#34;Z&#34; is for Zebra Finch</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jan 28, 2015</p>
+                        <p class="price">$395.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/9e2c2d49-5528-4adc-a8d8-c6b1c8d9a387.jpg"
+                         alt="&#34;J&#34; is for Junco" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/9e2c2d49-5528-4adc-a8d8-c6b1c8d9a387">
+                        <h2 class="title">&#34;J&#34; is for Junco</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jan 10, 2015</p>
+                        <p class="price">$395.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/316a3b73-c971-4a04-9c4b-6f7ad67e3c76.jpg"
+                         alt="Ibis_Scarlet" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/316a3b73-c971-4a04-9c4b-6f7ad67e3c76">
+                        <h2 class="title">Ibis_Scarlet</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jan 9, 2015</p>
+                        <p class="price">$395.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/a626e743-835a-4789-9c9d-78429adbbd5f.jpg"
+                         alt="Evening Waves" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/a626e743-835a-4789-9c9d-78429adbbd5f">
+                        <h2 class="title">Evening Waves</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Jun 9, 2014</p>
+                        <p class="price">$5800.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/d5af9643-fd2c-48f6-9249-aae9f25ab232.jpg"
+                         alt="Tulips a Bloomin&#39;" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/d5af9643-fd2c-48f6-9249-aae9f25ab232">
+                        <h2 class="title">Tulips a Bloomin&#39;</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 17, 2014</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/cc634ecd-06f0-405e-9bf9-f006afd4e4f4.jpg"
+                         alt="Orange Hibiscus" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/cc634ecd-06f0-405e-9bf9-f006afd4e4f4">
+                        <h2 class="title">Orange Hibiscus</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 26, 2014</p>
+                        <p class="price">$1800.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/bdb3f124-591e-474b-8f65-c4c2b58df85c.jpg"
+                         alt="Lone White daffodil" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/bdb3f124-591e-474b-8f65-c4c2b58df85c">
+                        <h2 class="title">Lone White daffodil</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">May 2, 2013</p>
+                        <p class="price">$0.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/b65f5112-eff1-41a2-b62a-43e9c5612888.jpg"
+                         alt="&#34;Fishing Duo&#34;" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/b65f5112-eff1-41a2-b62a-43e9c5612888">
+                        <h2 class="title">&#34;Fishing Duo&#34;</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Apr 22, 2013</p>
+                        <p class="price">$225.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/9afe6132-fae1-4b5a-866f-3d60cadf7b29.jpg"
+                         alt="Sunflower Glow (unframed)" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/9afe6132-fae1-4b5a-866f-3d60cadf7b29">
+                        <h2 class="title">Sunflower Glow (unframed)</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 12, 2013</p>
+                        <p class="price">$595.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/8fae391e-be69-4703-a758-6c02310f197f.jpg"
+                         alt="Yaquina Head light" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/8fae391e-be69-4703-a758-6c02310f197f">
+                        <h2 class="title">Yaquina Head light</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 12, 2013</p>
+                        <p class="price">$295.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/f1c0b0d4-4327-44f2-ba60-10a952f5ef84.jpg"
+                         alt="&#34;Gracie&#34; - 7&#34;x10&#34;" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/f1c0b0d4-4327-44f2-ba60-10a952f5ef84">
+                        <h2 class="title">&#34;Gracie&#34; - 7&#34;x10&#34;</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 6, 2013</p>
+                        <p class="price">$495.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/3672457d-3dd0-46e7-999e-6021cd166831.jpg"
+                         alt="Eagles Perch framed" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/3672457d-3dd0-46e7-999e-6021cd166831">
+                        <h2 class="title">Eagles Perch framed</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Mar 6, 2013</p>
+                        <p class="price">$395.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/7646c373-bb12-4c91-8d2c-f74c3c402339.jpg"
+                         alt="Pansy Trio" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/7646c373-bb12-4c91-8d2c-f74c3c402339">
+                        <h2 class="title">Pansy Trio</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Feb 27, 2013</p>
+                        <p class="price">$695.00</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="post">
+                <div class="image">
+                    
+                    <img src="https://s3.amazonaws.com/fineartimages.dailypaintworks.com/6856184f-d6cc-44fd-9e3b-ba9c109cf811.jpg"
+                         alt="Crimson Iris Glow" class="painting-img" loading="lazy">
+                </div>
+                <div class="tag">
+                    <a target="_blank"
+                       href="https://www.dailypaintworks.com/viewart/6856184f-d6cc-44fd-9e3b-ba9c109cf811">
+                        <h2 class="title">Crimson Iris Glow</h2>
+                    </a>
+                    <h3 class="artist-name text-gray-800">Andy Sewell</h3>
+                    <div class="post-footer text-gray-800">
+                        <p class="date">Feb 26, 2013</p>
+                        <p class="price">$195.00</p>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <div class="text-gray-800 pages">
+        <span>Pages</span>
+        
+        <a class="page page-btn"
+           href="/available">1</a>
+        
+        <a class="page page-btn current"
+           href="/available/pages/2">2</a>
+        
+    </div>
+</div>
+</body>
+</html>
