@@ -85,7 +85,7 @@ def update_template(all_posts, page_size=120):
         Options(
             "docs",
             all_posts,
-            "/dailypaintworks-updates/",
+            "/dailypaintworks-updates",
             "Show only available",
             "/dailypaintworks-updates/available",
         ),
@@ -94,7 +94,7 @@ def update_template(all_posts, page_size=120):
             [p for p in all_posts if not p["Sold"]],
             "/dailypaintworks-updates/available",
             "Show all",
-            "/dailypaintworks-updates/",
+            "/dailypaintworks-updates",
         ),
     ]
     template = env.get_template("index.html")
@@ -123,7 +123,7 @@ def update_template(all_posts, page_size=120):
                 "posts": posts,
                 "page_current": page,
                 "root_path": opt.root_path,
-                "pages": [f"{page_folder[4:]}/{i + 1}" for i in range(pages_total)],
+                "pages": [f"{opt.root_path}/pages/{i + 1}" for i in range(pages_total)],
                 "switch_message": opt.switch_message,
                 "switch_path": opt.switch_path,
             }
