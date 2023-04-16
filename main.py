@@ -87,14 +87,14 @@ def update_template(all_posts, page_size=120):
             all_posts,
             "/dailypaintworks-updates/",
             "Show only available",
-            "/available",
+            "/dailypaintworks-updates/available",
         ),
         Options(
             os.path.join("docs", "available"),
             [p for p in all_posts if not p["Sold"]],
             "/dailypaintworks-updates/available",
             "Show all",
-            "/",
+            "/dailypaintworks-updates/",
         ),
     ]
     template = env.get_template("index.html")
